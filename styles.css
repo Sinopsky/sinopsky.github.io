@@ -133,7 +133,7 @@ section.info{
 }
 .reveal{
     position: relative;
-    top: 50px;
+    top: 20px;
     opacity: 0;
     transition: 0.5s all ease;
   }
