@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
+
+          }
+        }
+        
+      </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;600&family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet"> 
+      <link href="styles.css" rel="stylesheet"/>
+
+</head>
+
+    <body>
+    <section class="earth"> </section>
+    
+    <section class="content" style="color: azure;">
+        <section class="text"><br><h1>Akbulat Fazliev — </h1>
+          <h2>@R06LoXXX_k1d</h2>
+        <section class="info"><h3>GIS Developer, GIS & geodata/spatial data analyst. Team leading project team of geoanalytics, 3D engineer and GIS analysts in the field of business consulting.
+        <br></br>
+        <button class="button" onclick="scrollToSection('projects')">Projects Done</button>
+        <button class="button" onclick="scrollToSection('experience')">Experience</button>
+        <button class="button" onclick="scrollToSection('contacts')">Contact</button>
+      </h3>
+      <br>          
+     <a class="h3" id='projects';
+      href="https://ee-akfazlief.projects.earthengine.app/view/gas-map-of-russia"
+      target="_blank">
+      Gas Map of Russia
+    </a>
+    <br>
+    <img class="img" src="./public/rectangle-4@2x.png"/>
+    <h4>Dynamic interactive gas map based on Sentinel-5P data. The application also 
+      generates graphs of gas concentration dynamics for a selected territory 
+      for the month up to the selected date</h4>
+
+    <a class="h3";
+      href="https://ee-akfazlief.projects.earthengine.app/view/hogweed-analyst"
+      target="_blank">
+      Hogweed Analyst
+    </a>
+    <br>
+    <img class="img" src="./public/image-1@2x.png">
+    <h4>Creation of a mask layer for potential giant hogweed hotspots. The methodology involves selecting NDVI and HSI (brightness) values for your area of interest.</h4>
+    <br>
+    <h3 class="h3" id='experience'>
+      GIS Specialist — <small class="h5">RusGIS Technologies</small>
+    </h3>
+    <h4>Full-stack GIS analysis using GEE, ArcGIS PRO, QGIS, ENVI, ArcPY, PyQGIS, Python, Machine Learning. Database work (PostGIS, PostgreSQL). Development of GEE WebApp applications, Python modules for QGIS, script writing for workflow optimization.</h4>
+    <button class="button1" style="border-color: rgb(133, 255, 188)">ArcGIS</button><button class="button1" style="border-color: rgb(255, 100, 115)">QGIS</button><button class="button1" style="border-color: rgb(133, 192, 255)">GEE</button><button class="button1" style="border-color: rgb(255, 220, 133)">Python</button>
+  
+    <br>
+    <h3 class="h3" >
+      GIS Specialist/dev/Spatial Data Analyst —<small class="h5">Freelance</small>
+    </h3>
+    <h4>Full-stack GIS analysis, handling all tasks with spatial data, analytics, and parsing of spatial data (OSMnx, Pandas, Geopandas, Numpy, etc.) writing Python scripts (GDAL, Geopandas, Contextily, Folium, osmnx, networkx, selenium, etc.), working with ArcGIS ModelBuilder, handling training samples (ML), working with GIS-portals (GIS-portal of the Tyumen region), working with Geoserver, Leaflet, Mapbox, etc., using R Studio, spatial analysis with Google Earth Engine, ML in ArcGIS, ENVI, QGIS, development of commercial GIS applications on Python</h4>
+    <button class="button1" style="border-color: rgb(133, 255, 188)">ArcGIS</button><button class="button1" style="border-color: rgb(133, 192, 255)">GEE</button><button class="button1" style="border-color: rgb(255, 220, 133)">Python</button>
+    
+    <br>
+    <h3 class="h3" id='contacts'>Contact <p><a href="https://t.me/R06LoXXX_k1D">
+      <h5 class="h6">Telegram - t.me/R06LoXXX_k1D</h5>
+    </p>
+                <p><a href="https://github.com/akbulat">
+      <h5 class="h6">Github - Akbulat</h5>
+    </p>
+    </h3>
+    <br>
+      </section>
+        </section>
+    </section>
+
+    <script>
+      // Функция для плавной прокрутки к указанной секции
+      function scrollToSection(sectionId) {
+          document.getElementById(sectionId).scrollIntoView({
+              behavior: 'smooth'
+          });
+      }
+  </script>
+    <script type="module" src="main.js"></script>
+    </body>
+</html>
