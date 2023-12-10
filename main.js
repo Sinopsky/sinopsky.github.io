@@ -65,7 +65,7 @@ let composer = new EffectComposer( renderer );
 				composer.addPass( ssaaRenderPassP );
                 const bloomPass = new UnrealBloomPass( new THREE.Vector2( window.innerWidth, window.innerHeight ), 1.5, 0.4, 0.85 );
                 bloomPass.threshold = 0.2;
-	            bloomPass.strength = 0.4;
+	            bloomPass.strength = 1;
 	            bloomPass.radius = 1;
                 composer.addPass( bloomPass );
 				const outputPass = new OutputPass();
