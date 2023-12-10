@@ -23,6 +23,7 @@
 </head>
 
     <body>
+      <div class="preloader" id="preloader"><h1 class="loaderText">Loading Earth...</h1></div>
     <section class="earth"> </section>
     
     <section class="content" style="color: azure;">
@@ -119,5 +120,13 @@
   </script>
     <script src="scroll.js"></script>
     <script type="module" src="main.js"></script>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function(){
+        loader.style.display = "none";
+      })
+
+
+    </script>
     </body>
 </html>
