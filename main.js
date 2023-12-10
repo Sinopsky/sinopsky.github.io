@@ -30,7 +30,7 @@ loader.load(
     
     } 
 )
-const renderer = new THREE.WebGLRenderer({ alpha: false; antialias: true});
+const renderer = new THREE.WebGLRenderer({ antialias: true});
 renderer.setSize( window.innerWidth, window.innerHeight );
 section.appendChild( renderer.domElement );
 
