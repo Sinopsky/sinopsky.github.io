@@ -50,11 +50,24 @@
       href="https://ee-akfazlief.projects.earthengine.app/view/hogweed-analyst"
       target="_blank">
       Hogweed Analyst
-    </a>
+    </a> 
+
     <br>
     <img class="img" src="./public/image-1@2x.png">
     <h4>Creation of a mask layer for potential giant hogweed hotspots. The methodology involves selecting NDVI and HSI (brightness) values for your area of interest.</h4>
     <br>
+    <br>
+    <h3
+    class="hovering_text"
+    href="" onclick="showDiv()"
+    >Geocoded Map by Sectors</h3
+  >
+  <br>
+  <h3
+  class="hovering_text"
+  href="" onclick="showDiv2()"
+  >Hexgrid Map Cluster</h3>
+<br>
     <h3 class="h3" id='experience'>
       GIS Specialist — <small class="h5">RusGIS Technologies</small>
     </h3>
@@ -62,26 +75,31 @@
     <button class="button1" style="border-color: rgb(133, 255, 188)">ArcGIS</button><button class="button1" style="border-color: rgb(255, 100, 115)">QGIS</button><button class="button1" style="border-color: rgb(133, 192, 255)">GEE</button><button class="button1" style="border-color: rgb(255, 220, 133)">Python</button>
   
     <br>
-    <h3 class="h3" >
+    <h3 class="h3">
       GIS Specialist/dev/Spatial Data Analyst —<small class="h5">Freelance</small>
     </h3>
     <h4>Full-stack GIS analysis, handling all tasks with spatial data, analytics, and parsing of spatial data (OSMnx, Pandas, Geopandas, Numpy, etc.) writing Python scripts (GDAL, Geopandas, Contextily, Folium, osmnx, networkx, selenium, etc.), working with ArcGIS ModelBuilder, handling training samples (ML), working with GIS-portals (GIS-portal of the Tyumen region), working with Geoserver, Leaflet, Mapbox, etc., using R Studio, spatial analysis with Google Earth Engine, ML in ArcGIS, ENVI, QGIS, development of commercial GIS applications on Python</h4>
     <button class="button1" style="border-color: rgb(133, 255, 188)">ArcGIS</button><button class="button1" style="border-color: rgb(133, 192, 255)">GEE</button><button class="button1" style="border-color: rgb(255, 220, 133)">Python</button>
     
     <br>
-    <h3 class="h3" id='contacts'>Contact <p><a href="https://t.me/R06LoXXX_k1D">
-      <h5 class="h6">Telegram - t.me/R06LoXXX_k1D</h5>
+
+    <h3 class="h3" id='contacts'>Contact <p><a class="reveal" href="https://t.me/R06LoXXX_k1D">
+      <h5 class="h6">Telegram - t.me/R06LoXXX_k1D</h5></small>
     </p>
-                <p><a href="https://github.com/akbulat">
-      <h5 class="h6">Github - Akbulat</h5>
+                <p><a class="reveal" href="https://github.com/akbulat">
+      <h5 class="h6">Github - Akbulat</h5></a>
     </p>
     </h3>
     <br>
       </section>
         </section>
     </section>
-
+    <div class="popup" id="popupDiv">
+      <iframe name="framegeo" src="geocoded_map_by_sectors2.html"></iframe> </div>
+      <div class="popup" id="popupDiv2">
+        <iframe name="framegeo" src="hexgrid_map_cluster_coloring.html"></iframe> </div>
     <script>
+      
       // Функция для плавной прокрутки к указанной секции
       function scrollToSection(sectionId) {
           document.getElementById(sectionId).scrollIntoView({
@@ -89,6 +107,17 @@
           });
       }
   </script>
+  <script>
+    function showDiv() {
+   document.getElementById('popupDiv').style.display = "block";
+   document.getElementById('popupDiv2').style.display = "none";
+}
+  function showDiv2() {
+   document.getElementById('popupDiv2').style.display = "block";
+   document.getElementById('popupDiv').style.display = "none";
+}
+  </script>
+    <script src="scroll.js"></script>
     <script type="module" src="main.js"></script>
     </body>
 </html>
